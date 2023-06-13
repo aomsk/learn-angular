@@ -13,7 +13,7 @@ export class AppComponent {
     this.value = (price * 3) / 4;
   }
 
-  // title = 'frontend';
+  // title = 'learn-angular';
   // ninjaName = 'Naruto';
   // ninjaConsole() {
   //   console.log('ninjaConsole:', this.ninjaName);
