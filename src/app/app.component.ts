@@ -3,8 +3,22 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'frontend';
+  value = 0;
+
+  calBuffet(value: string) {
+    const price = Number(value);
+    this.value = (price * 3) / 4;
+  }
+
+  // title = 'frontend';
+  // ninjaName = 'Naruto';
+  // ninjaConsole() {
+  //   console.log('ninjaConsole:', this.ninjaName);
+  // }
+  // cahngeNinjaName(name: string) {
+  //   this.ninjaName = name;
+  // }
 }
