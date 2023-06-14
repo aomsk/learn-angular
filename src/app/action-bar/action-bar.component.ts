@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-action-bar',
@@ -7,16 +7,17 @@ import { Component } from '@angular/core';
 })
 export class ActionBarComponent {
   counter = 0;
+  @Input() step: number = 1;
 
   decrease() {
-    if (this.counter - 1 > 0) {
-      this.counter--;
+    if (this.counter - this.step >= 0) {
+      this.counter = this.counter - this.step;
     }
   }
 
   increment() {
-    if (this.counter + 1 < 100) {
-      this.counter++;
+    if (this.counter + this.step <= 100) {
+      this.counter = this.counter + this.step;
     }
   }
 }
