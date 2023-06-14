@@ -1,3 +1,5 @@
+<!-- 1 ------------------------------------------------------------------------------------ -->
+
 <!-- Hello World Angular <br>
 This is my {{ title }} <br>
 My village ninja's nmae is {{ ninjaName }}
@@ -9,6 +11,8 @@ My village ninja's nmae is {{ ninjaName }}
   <button type="button" (click)="cahngeNinjaName('Naruto')">Change Ninja Name to Naruto</button>
 </div> -->
 
+<!-- 2 ------------------------------------------------------------------------------------ -->
+
 <!-- <span>มา 4 คน จ่าย 3</span>
 <div>
   <input #priceBuffetInput type="text" value="" placeholder="ราคาบุเฟต์">
@@ -16,5 +20,9 @@ My village ninja's nmae is {{ ninjaName }}
 </div>
 <span>คนละ {{ value }} บาท</span> -->
 
-<app-action-bar [step]="5"></app-action-bar>
-<app-action-bar [step]="10"></app-action-bar>
+<!-- 3 ------------------------------------------------------------------------------------ -->
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
+
+<button type="button" (click)="testClick()">testEventBinding</button>
+<!-- (numberChange)="", (click)="" => event binding -->
