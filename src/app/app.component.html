@@ -21,8 +21,12 @@ My village ninja's nmae is {{ ninjaName }}
 <span>คนละ {{ value }} บาท</span> -->
 
 <!-- 3 ------------------------------------------------------------------------------------ -->
-<app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
+<!-- <app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
 <app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
 
-<button type="button" (click)="testClick()">testEventBinding</button>
+<button type="button" (click)="testClick()">testEventBinding</button> -->
 <!-- (numberChange)="", (click)="" => event binding -->
+
+<!-- 4 ------------------------------------------------------------------------------------ -->
+<app-max-min-meter [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (minChange)="doAppMinChange($event)"
+  (maxChange)="doAppMaxChange($event)"></app-max-min-meter>
