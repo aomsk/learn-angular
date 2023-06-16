@@ -28,5 +28,20 @@ My village ninja's nmae is {{ ninjaName }}
 <!-- (numberChange)="", (click)="" => event binding -->
 
 <!-- 4 ------------------------------------------------------------------------------------ -->
-<app-max-min-meter [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (minChange)="doAppMinChange($event)"
-  (maxChange)="doAppMaxChange($event)"></app-max-min-meter>
+<!-- <app-max-min-meter [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (minChange)="doAppMinChange($event)"
+  (maxChange)="doAppMaxChange($event)"></app-max-min-meter> -->
+
+<!-- 5 ------------------------------------------------------------------------------------ -->
+<app-sqaure-flex [divHeight]="squareHeight" [divWidth]="squareWidth"></app-sqaure-flex>
+<div>
+  width:
+  <button type="button" (click)="squareWidth = 50">50px</button>
+  <button type="button" (click)="squareWidth = 100">100px</button>
+  <button type="button" (click)="squareWidth = 200">200px</button>
+</div>
+<div>
+  height:
+  <button type="button" (click)="squareHeight = 50">50px</button>
+  <button type="button" (click)="squareHeight = 100">100px</button>
+  <button type="button" (click)="squareHeight = 200">200px</button>
+</div>

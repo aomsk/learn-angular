@@ -29,14 +29,15 @@ export class AppComponent {
   //   console.log('test number cahnge from app-action-bar:', value);
   // }
   // 4 -------------------------------------------------------------------------------------
-  appMinLabel: string = 'myAppMinLabel';
-  appMaxLabel: string = 'myAppMaxLabel';
-
-  doAppMinChange(value: number) {
-    console.log(`test minChange event : ${value}`);
-  }
-
-  doAppMaxChange(value: number) {
-    console.log(`test maxChange event : ${value}`);
-  }
+  // appMinLabel: string = 'myAppMinLabel';
+  // appMaxLabel: string = 'myAppMaxLabel';
+  // doAppMinChange(value: number) {
+  //   console.log(`test minChange event : ${value}`);
+  // }
+  // doAppMaxChange(value: number) {
+  //   console.log(`test maxChange event : ${value}`);
+  // }
+  // 5 -------------------------------------------------------------------------------------
+  squareHeight = 100;
+  squareWidth = 250;
 }
