@@ -38,6 +38,11 @@ export class AppComponent {
   //   console.log(`test maxChange event : ${value}`);
   // }
   // 5 -------------------------------------------------------------------------------------
-  squareHeight = 100;
-  squareWidth = 250;
+  // squareHeight = 100;
+  // squareWidth = 100;
+  // appCounter = 20;
+  // 6 -------------------------------------------------------------------------------------
+  // activate: boolean = false;
+  // 7 -------------------------------------------------------------------------------------
+  // cutomerList: string[] = ['customer1', 'customer2'];
 }

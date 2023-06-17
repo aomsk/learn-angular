@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SqaureFlexComponent {
   @Input() divWidth: number = 200;
-  @Input() divHeight: number = 200;
+  @Input() divHeight: number = 100;
 }
