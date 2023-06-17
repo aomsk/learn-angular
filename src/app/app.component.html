@@ -58,3 +58,14 @@ My village ninja's nmae is {{ ninjaName }}
 <!-- <app-action-bar [inputDisplay]="activate"></app-action-bar>
 <app-action-bar [inputDisplay]="true"></app-action-bar>
 <button type="button" (click)="activate = !activate">activate</button> -->
+
+<!-- 7 ------------------------------------------------------------------------------------ -->
+<ul>
+  <li *ngFor="let customer of cutomerList; let i = index">{{ customer }}
+    <button type="button" (click)="removeCustomer(i)">remove</button>
+  </li>
+</ul>
+
+<button type="button" (click)="pushCustomer()">push</button>
+<button type="button" (click)="unShiftCustomer()">unShift</button>
+<button type="button" (click)="popCustomer()">pop</button>

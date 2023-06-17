@@ -44,5 +44,27 @@ export class AppComponent {
   // 6 -------------------------------------------------------------------------------------
   // activate: boolean = false;
   // 7 -------------------------------------------------------------------------------------
-  // cutomerList: string[] = ['customer1', 'customer2'];
+  cutomerList: string[] = [
+    'customer1',
+    'customer2',
+    'customer3',
+    'customer4',
+    'customer5',
+  ];
+
+  pushCustomer() {
+    this.cutomerList.push('customer' + (this.cutomerList.length + 1));
+  }
+
+  unShiftCustomer() {
+    this.cutomerList.unshift('customer' + (this.cutomerList.length + 1));
+  }
+
+  popCustomer() {
+    this.cutomerList.pop();
+  }
+
+  removeCustomer(index: number) {
+    this.cutomerList.splice(index, 1);
+  }
 }
